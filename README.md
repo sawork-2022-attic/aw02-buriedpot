@@ -1,3 +1,4 @@
+java
 # POS in Shell
 
 The demo shows a simple POS system with command line interface. 
@@ -45,4 +46,22 @@ Implementing a PosDB with real database is very much welcome.
 Please use asciinema (https://asciinema.org) to record a demo and submit the url in QQ group. 
 
 And please elaborate your understanding in layered systems via this homework in your README.md.
+
+
+
+# Understanding in layered systems
+
+A layered system means that the lower layer serves the higher layer. Each layer provides several services. Services are defined by protocols. 
+
+Advantages:
+
+* The programmer only needs to care about the protocols of those layers directly related to his work, which provide services to the higher layers and get services from the lower layers.
+* Replaceable or updatable. The internal implementation can be changed free, as long as the external interface does not change.
+
+* Coupling between system components is reduced.
+* Good for reuse.
+
+Disadvantages:
+
+* Performance problems. A simple operation made by the highest layer may be transferred layer by layer to the lowest layer, which may cause performance degradation.
 
